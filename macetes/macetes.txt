@@ -1,0 +1,28 @@
+py .\manage.py runserver para rodar o projeto
+py .\manage.py startapp app criou o app aonde vai nosso back-end
+
+
+models.py = aonde criamos as tabelas, apos cada tabela criada temos que rodar os comandos 
+python manage.py makemigrations
+python manage.py migrate
+
+
+views.py = aonde  a logica e criada 
+
+
+
+sempre criar o arquivo .env na raiz quando tiver fazendo em outro dia e add isso:
+
+SECRET_KEY='k%$83qf!hzF%t@3kmLr8@e2Ej@yjvPnx#z@wF-+w*P^*3q@pQ'
+DB_NAME='DomesticTcc'
+DB_HOST='127.0.0.1'
+DB_PORT=3306
+DB_USER='root'
+DB_PASSWORD='uva0702#'
+
+
+para criar o banco 
+
+DROP DATABASE IF EXISTS DomesticTcc;
+CREATE DATABASE DomesticTcc;
+USE DomesticTcc; 
